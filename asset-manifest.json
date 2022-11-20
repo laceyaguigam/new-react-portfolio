@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/new-react-portfolio/static/css/main.506611b5.css",
+    "main.js": "/new-react-portfolio/static/js/main.a835d24b.js",
+    "static/js/787.000f6ff5.chunk.js": "/new-react-portfolio/static/js/787.000f6ff5.chunk.js",
+    "static/media/Heriseon-Marketing.png": "/new-react-portfolio/static/media/Heriseon-Marketing.8f20be82c8a537d86268.png",
+    "static/media/Run-Buddy.png": "/new-react-portfolio/static/media/Run-Buddy.bd2803f4daf68c98b63f.png",
+    "static/media/placeholder-3.png": "/new-react-portfolio/static/media/placeholder-3.4bd8660002dd17a63433.png",
+    "static/media/Smart-Homie.png": "/new-react-portfolio/static/media/Smart-Homie.d4657a3f93a6cc33d9e2.png",
+    "static/media/Holiday-Calendar.png": "/new-react-portfolio/static/media/Holiday-Calendar.968d0580af13b02fa9e4.png",
+    "static/media/white-gold-geometric.jpg": "/new-react-portfolio/static/media/white-gold-geometric.a49ed7d7564b1870f5bf.jpg",
+    "static/media/about-me.jpg": "/new-react-portfolio/static/media/about-me.84a28061901ea08ca0fb.jpg",
+    "static/media/logo.svg": "/new-react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/new-react-portfolio/index.html",
+    "main.506611b5.css.map": "/new-react-portfolio/static/css/main.506611b5.css.map",
+    "main.a835d24b.js.map": "/new-react-portfolio/static/js/main.a835d24b.js.map",
+    "787.000f6ff5.chunk.js.map": "/new-react-portfolio/static/js/787.000f6ff5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.506611b5.css",
+    "static/js/main.a835d24b.js"
+  ]
+}
