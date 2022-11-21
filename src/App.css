@@ -1,0 +1,384 @@
+
+                    /* APPLIES TO WHOLE PAGE */
+
+
+                    :root {
+                        --primary-color: black; 
+                        --secondary-color: white;
+                        --tertiary-color: #DEC961;
+                        --fourth-color: lightgrey;
+                    }
+                    
+                     * {
+                        box-sizing: border-box;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                    
+                    p {
+                        font-size: 16px;
+                        max-width: 75%;
+                    }
+                    
+                    .float-right {
+                        float: right;
+                        margin-right: 25px; 
+                        border-radius: 8px;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
+                                        /* BODY */
+                    body {
+                        background-color: var(--secondary-color);
+                        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+                    
+                                        /* HEADER SECTION*/
+                    .header {
+                        padding: 50px;
+                    /* flexbox coding */   
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        list-style: none; 
+                    /*background coding */
+                        background-image: url("./assets/images/white-gold-geometric.jpg");
+                        background-size: cover;
+                        background-attachment: fixed;
+                        background-position: 50%;
+                    }
+                    
+                    .fixed-header { 
+                        position: sticky;
+                        position: -webkit-sticky;
+                        top: 0;  
+                    }
+                    
+                    /* NAVIGATION SECTION*/
+                    .header div {
+                        padding: 20px 30px;
+                        margin-top: auto;
+                        float: left;
+                        font-size: 30px; 
+                    }
+                    
+                    .header div ul li {
+                    /* shows list horizontally */   
+                        display: inline-block;
+                        margin: left;
+                        list-style-type: none; 
+                    /* flexbox coding */
+                       justify-content: space-between;
+                       flex: start;
+                    }
+                    
+                    /*hover for nav */
+                    .header div ul li a:hover {
+                        color: var(--tertiary-color);
+                        text-shadow: none;
+                    }
+                    
+                    .header a {
+                        color: var(--primary-color);
+                        text-decoration: none;
+                        padding-top: 50px;
+                    }
+                                
+                                        /* CONTENT SECTION*/
+                     .content img {
+                        max-height: 250px;
+                    /*moved picture to correct place*/    
+                        margin-top: 25px;
+                    }
+                    
+                    h3 {
+                        font-size: 50px;
+                        font-style:oblique;
+                    /* adds space under h3 */    
+                        margin-bottom: 20px;
+                        text-decoration:underline;
+                        text-decoration-color:var(--tertiary-color);
+                        text-decoration-thickness: 5%;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
+                                        /* HERO SECTION */
+                    .hero {
+                        height: 250px;
+                        width: 100%;
+                        margin-bottom: 50px;
+                    /* background coding*/
+                        background-image: url("./assets/images/white-gold-geometric.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    /* flexbox coding*/
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        background-attachment: fixed;
+                        background-position: 50%;
+                    }
+                    
+                    .hero h1 {
+                        font-size: 60px;
+                        font-weight: bold;
+                        text-align:right;
+                        width: 100%;
+                        color: var(--primary-color);
+                        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+                        padding-top: 70px;
+                    }
+                    
+                                        /* ABOUT ME SECTION*/
+                    .about-me {
+                        margin-bottom: 20px;
+                        padding: 50px;
+                        height: 300px;
+                        background-color:var(--fourth-color);  
+                    }
+                    
+                                        /* PROJECTS SECTION*/
+                    .projects {
+                        margin-bottom: 20px;
+                        padding: 50px;
+                        height: 750px;
+                        background-color: var(--fourth-color);
+                        flex: wrap;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .project1 img {
+                        display:block;
+                        max-height: 300px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 8px;
+                        flex: wrap;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .project-2 img {
+                       border-radius: 8px;
+                    }
+                    
+                                        /* CONTACT ME SECTION */
+                    .contact-me {
+                        margin-bottom: 20px;
+                        padding: 50px;
+                        height: 300px;
+                        background-color: lightgray; 
+                    }
+                    
+                    .contact-me ul li {
+                       height: 50px;
+                       width: 300px;
+                        /* shows list horizontally */   
+                        display: inline-block;
+                        margin: left;
+                        list-style-type: none; 
+                        /* flexbox coding */
+                       justify-content: space-between;
+                       flex: start;
+                    }
+                    
+                    .contact-info {
+                        text-align:center;
+                        font-size: 30px;
+                        height:100px;
+                    }
+                    
+                    .contact-me a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                    
+                    /*hover for GitHub */
+                    .contact-me a:hover {
+                        color:var(--tertiary-color);
+                        text-shadow: none;
+                    }
+                    
+                                    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+                    @media screen and (max-width: 980px){
+                    
+                    header {
+                        padding-bottom: 0;
+                        justify-content: center;
+                        width: auto;
+                    }
+                      
+                    header nav ul {
+                        margin-top: 20px;
+                        width: auto;
+                        justify-content: center;
+                    }
+                      
+                    .hero {
+                        width:auto;
+                    }
+                    
+                    .hero h1 {
+                        text-align: right; 
+                    }
+                    
+                    header nav ul li a {
+                        font-size: 20px;
+                        width:auto;
+                    }
+                      
+                    .about-me {
+                        width: auto;
+                    }
+                    
+                    .projects, .projects1 {
+                        width: 100%;
+                        height:fit-content;
+                        justify-content: center;
+                    
+                    }
+                    
+                    .contact-me {
+                        width: auto;
+                    }
+                       
+                    .contact-info {
+                        text-align:left;
+                        font-size: 20px;
+                        justify-content: space-between;
+                        padding-top: 50px;
+                        height: fit-content;
+                    }
+                    
+                    .contact-me a {
+                        margin-left: 750px;
+                    }
+                    }
+                    
+                    
+                                    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+                    @media screen and (max-width: 768px) {
+                    
+                        header {
+                            padding-bottom: 0;
+                            justify-content: center;
+                            width: 900px;
+                        }
+                          
+                        header nav ul {
+                            margin-top: 20px;
+                            width: 900px;
+                            justify-content: center;
+                        }
+                          
+                        .hero {
+                            width: 900px;
+                        }
+                        
+                        .hero h1 {
+                            text-align: center; 
+                        }
+                        
+                        header nav ul li a {
+                            font-size: 20px;
+                            width: 900px;
+                        }
+                          
+                        .about-me {
+                            width: 900px;
+                        }
+                        
+                        .float-right {
+                            margin-left: 50px;
+                        }
+                    
+                        .projects, .projects1 {
+                            width: 900px;
+                            height:fit-content;
+                            justify-content:center;
+                            margin-right: auto;
+                        }
+                        
+                        .contact-me {
+                            width: 900px;
+                        }
+                           
+                        .contact-info {
+                            text-align:left;
+                            font-size: 20px;
+                            justify-content: space-between;
+                            padding-top: 50px;
+                            height: fit-content;
+                        }
+                        
+                        .contact-me a {
+                            margin-left: 650px;
+                        }
+                    }
+                    
+                                    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+                      @media screen and (max-width: 575px) {
+                     header {
+                            padding-bottom: 0;
+                            justify-content: center;
+                            width: 900px;
+                        }
+                          
+                        header nav ul {
+                            margin-top: 20px;
+                            width: 900px;
+                            justify-content: center;
+                        }
+                          
+                        .hero {
+                            width: 900px;
+                        }
+                        
+                        .hero h1 {
+                            text-align: center; 
+                        }
+                        
+                        header nav ul li a {
+                            font-size: 20px;
+                            width: 900px;
+                        }
+                          
+                        .about-me {
+                            width: 900px;
+                        }
+                        
+                     .float-right {
+                         margin-right: auto;   
+                        }
+                    
+                        .projects, .projects1 {
+                            width: 900px;
+                            height:fit-content;
+                            justify-content:center;
+                            margin-right: auto;
+                        }
+                        
+                        .contact-me {
+                            width: 900px;
+                        }
+                           
+                        .contact-info {
+                            text-align:left;
+                            font-size: 20px;
+                            justify-content: space-between;
+                            padding-top: 50px;
+                            height: fit-content;
+                        }
+                        
+                        .contact-me a {
+                            margin-left: 650px;
+                        } 
+                      }
